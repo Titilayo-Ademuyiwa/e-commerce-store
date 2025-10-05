@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="top">
+        <div class="top-initial">
+             <div><img src="phenomenaldesigns2.jpg" alt="logo" class="logo"/></div>
+             <div class="text-image">
+                <div class="welcome-text">welcome to labi's kreations<br/>an online fashion store<br/>where women of all<br/>colours and skin types<br/>find comfort</div>
+                <img src="phenomenal deigns10.jpg" alt="women" class="img"/>
+            </div>
+        </div>    
+        <div class="top-final">
+            <div class="top-final-text">shop</div>
+            <img src="shopping-cart-line.png" alt="cart" class="cart" onclick="OpenOnClick()"/>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <span class="close-cart" onclick="CloseOnClick()">X</span>
+        <div class="cart-text">my cart</div>
+        <ul class="my-cart-item">
+            
+        </ul> 
+        <div class="buy-total">
+            <h4 class="total">total: &#8358;<span class="cart-total">0</span></h4>
+            <button class="buy" onclick="ToBuy()">buy</button>
+        </div>  
+    </div>
+
+    <div class="designs">
+        <h3 class="group-design">gowns</h3>
+        <div class="dress">
+            <div class="design">
+                <img src="phenomenaldesigns1.jpg" class="image"/>
+                <h4 class="description">a pocketed gown</h4>
+                <h4 class="description">&#8358;3000</h4>
+                <button onclick="AddToCart()" class="add-to-cart" data-id="1" data-name="a pocketed gown" data-image="phenomenaldesigns1.jpg" data-price="3000">add to cart<img src="shopping-cart-line.png" class="btn-cart"/></button>
+            </div>
+             <div class="design">
+                <img src="phenomenal designs3.jpg" class="image"/>
+                <h4 class="description">a comfy gown</h4>
+                <h4 class="description">&#8358;10000</h4>
+                <button class="add-to-cart" data-id="2" data-name="a free gown" data-image="phenomenal designs3.jpg" data-price="10000">add to cart<img src="shopping-cart-line.png" class="btn-cart"/></button>
+            </div>
+             <div class="design">
+                <img src="phenomenal designs13.jpg" class="image"/>
+                <h4 class="description">a black & white gown</h4>
+                <h4 class="description">&#8358;5000</h4>
+                <button class="add-to-cart" data-id="3" data-name="a black & white gown" data-image="phenomenal designs13.jpg" data-price="5000">add to cart<img src="shopping-cart-line.png" class="btn-cart"/></button>
+            </div>
+        </div>
+
+        <h3 class="group-design">tops</h3>
+        <div class="dress">
+            <div class="design">
+                <img src="phenomenal designs4.JPG" class="image"/>
+                <h4 class="description">a light green top</h4>
+                <h4 class="description">&#8358;4000</h4>
+                <button class="add-to-cart" data-id="4" data-image="phenomenal designs4.JPG" data-name="a light green top" data-price="4000">add to cart <img src="shopping-cart-line.png" class="btn-cart"></button>
+            </div>
+            <div class="design">
+                <img src="phenomenal designs9.jpg" class="image"/>
+                <h4 class="description">a lemon top</h4>
+                <h4 class="description">&#8358;3000</h4>
+                <button class="add-to-cart" data-id="5" data-image="phenomenal designs9.jpg" data-name="a lemon top" data-price="3000">add to cart <img src="shopping-cart-line.png" class="btn-cart"></button>
+            </div>
+            <div class="design">
+                <img src="phenomenaldesigns12.jpg" class="image"/>
+                <h4 class="description">a crop top</h4>
+                <h4 class="description">&#8358;2000</h4>
+                <button class="add-to-cart" data-id="6" data-image="phenomenaldesigns12.jpg" data-name="a crop top" data-price="2000">add to cart <img src="shopping-cart-line.png" class="btn-cart"></button>
+            </div>
+            <div class="design">
+                <img src="phenomenal designs7.jpg" class="image"/>
+                <h4 class="description">a red top</h4>
+                <h4 class="description">&#8358;6000</h4>
+                <button class="add-to-cart" data-id="7" data-image="phenomenal designs7.jpg" data-name="a red top" data-price="6000">add to cart <img src="shopping-cart-line.png" class="btn-cart"></button>
+            </div>
+        </div>
+
+        <h3 class="group-design">pants</h3>
+        <div class="dress">
+            <div class="design">
+                <img src="phenomnldesigns8.jpg" class="image"/>
+                <h4 class="description">a multicolored pant</h4>
+                <h4 class="description">&#8358;2500</h4>
+                <button class="add-to-cart" data-id="8" data-name="a multicolored pant" data-image="phenomnldesigns8.jpg" data-price="2500">add to cart<img src="shopping-cart-line.png" class="btn-cart"/></button>
+            </div>
+             <div class="design">
+                <img src="phenomenaldeigns6.jpg" class="image"/>
+                <h4 class="description">a lilac pant</h4>
+                <h4 class="description">&#8358;4000</h4>
+                <button class="add-to-cart" data-id="9" data-name="a lilac pant" data-image="phenomenaldeigns6.jpg" data-price="4000">add to cart<img src="shopping-cart-line.png" class="btn-cart"/></button>
+            </div>
+        </div>
+
+        <h3 class="group-design">jacket & abortion belt</h3>
+        <div class="dress">
+            <div class="design">
+                <img src="phenomenal designs5.jpeg" class="image"/>
+                <h4 class="description">an ankara jacket</h4>
+                <h4 class="description">&#8358;3500</h4>
+                <button class="add-to-cart" data-id="10" data-name="an ankara jacket" data-image="phenomenal designs5.jpeg" data-price="3500">add to cart<img src="shopping-cart-line.png" class="btn-cart"/></button>
+            </div>
+             <div class="design">
+                <img src="phenomenal designs11.jpg" class="image"/>
+                <h4 class="description">ankara abortion belt</h4>
+                <h4 class="description">&#8358;1000</h4>
+                <button class="add-to-cart" data-id="11" data-name="ankara abortion belt" data-image="phenomenal designs11.jpg" data-price="1000" >add to cart<img src="shopping-cart-line.png" class="btn-cart"/></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
